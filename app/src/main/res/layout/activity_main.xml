@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnSubcription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subscription"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="btnSubscriptionOnClick"/>
+
+    <Button
+        android:id="@+id/btnBannerSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Banner Setting"
+        app:layout_constraintEnd_toEndOf="@+id/btnSubcription"
+        app:layout_constraintStart_toStartOf="@+id/btnSubcription"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubcription"
+        android:onClick="btnBannerSettingOnClick"/>
+
+    <Button
+        android:id="@+id/btnCreateOwnGoalAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Own Goal"
+        app:layout_constraintEnd_toEndOf="@+id/btnBannerSetting"
+        app:layout_constraintStart_toStartOf="@+id/btnBannerSetting"
+        app:layout_constraintTop_toBottomOf="@+id/btnBannerSetting"
+        android:onClick="btnCreateOwnGoalActOnClick"/>
+
+    <Button
+        android:id="@+id/btnNotiSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Noti Settings"
+        app:layout_constraintEnd_toEndOf="@+id/btnCreateOwnGoalAct"
+        app:layout_constraintStart_toStartOf="@+id/btnCreateOwnGoalAct"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreateOwnGoalAct"
+        android:onClick="btnNotiSettingOnclick"/>
+
+    <Button
+        android:id="@+id/btnCommunitySetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Community Setting"
+        app:layout_constraintEnd_toEndOf="@+id/btnNotiSetting"
+        app:layout_constraintStart_toStartOf="@+id/btnNotiSetting"
+        app:layout_constraintTop_toBottomOf="@+id/btnNotiSetting"
+        android:onClick="btnCommunitySettingOnclick"/>
+
+    <Button
+        android:id="@+id/btnCommunityForum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="community forum"
+        app:layout_constraintEnd_toEndOf="@+id/btnCommunitySetting"
+        app:layout_constraintStart_toStartOf="@+id/btnCommunitySetting"
+        app:layout_constraintTop_toBottomOf="@+id/btnCommunitySetting"
+        android:onClick="btnCommunityForumOnclick"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
